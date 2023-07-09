@@ -1,5 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Akatab&family=Open+Sans:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Akatab&family=Fasthand&family=Open+Sans:wght@500&display=swap');
 
+
+/* Imported fonts  */
+/* font-family: 'Akatab', sans-serif;
+font-family: 'Fasthand', cursive;
+font-family: 'Open Sans', sans-serif; */
 .text_openSans {
     font-family: 'Open Sans', sans-serif;
+}
+.banner{
+    background-image: url(./Assets/Images/banner1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 22rem;
+    font-family: 'Fasthand', cursive;
 }
