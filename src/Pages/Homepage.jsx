@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Componenets/Navbar";
-
+import Footer from "../Componenets/Footer";
 //Images Import
 import Min_order from "../Assets/Images/no_min_order.webp";
 import Live from "../Assets/Images/live_order.webp";
@@ -13,7 +13,7 @@ const Homepage = () => {
     <div>
       <Navbar />
       <div className="banner flex justify-center items-center">
-        <h1 className="text-white font-bold max-lg:text-9xl max-sm:text-6xl">
+        <h1 className="text-white font-bold text-9xl max-sm:text-6xl">
           CapStone
         </h1>
       </div>
@@ -28,7 +28,7 @@ const Homepage = () => {
           find your next great meal.
         </p>
       </div>
-      <div className="bg-red-950 w-full max-lg:h-96 max-sm:h-max" >
+      <div className="bg-red-950 w-full max-lg:h-96 max-sm:h-max">
         <div className="flex max-lg:flex-row max-sm:flex-col justify-around max-sm:items-center">
           <div className="w-max flex flex-col items-center">
             <img src={Min_order} alt="Minimum order" className="feature_img" />
@@ -62,7 +62,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      <div  className="h-64 flex max-sm:flex-col max-lg:flex-row justify-around items-center mt-8">
+      <div className="flex max-sm:flex-col max-lg:flex-row justify-around items-center mt-8">
         <div className="text-center">
           <h1 className="text-3xl font-extralight">
             Restraurants in your pocket
@@ -77,6 +77,7 @@ const Homepage = () => {
           <img src={AppStore} alt="app_store" width={250} className="m-5" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
