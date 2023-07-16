@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <div className="banner flex justify-center items-center">
+      <div className="banner banner1 flex justify-center items-center">
         <h1 className="text-white font-bold text-9xl max-sm:text-6xl">
           CapStone
         </h1>
