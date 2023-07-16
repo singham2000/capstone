@@ -16,9 +16,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-wrap text-white mt-10 ">
         <div className="w-44">
-          <h2 className="text-red-200 py-2 uppercase">
-            About CapStone
-          </h2>
+          <h2 className="text-red-200 py-2 uppercase">About CapStone</h2>
           <ul>
             <li>Who We Are</li>
             <li>Blog</li>
@@ -27,18 +25,14 @@ const Footer = () => {
           </ul>
         </div>
         <div className="w-44">
-          <h2 className="text-red-200 py-2 uppercase">
-            For RESTAURANTS
-          </h2>
+          <h2 className="text-red-200 py-2 uppercase">For RESTAURANTS</h2>
           <ul>
             <li>Partner with us</li>
             <li>Your Connect</li>
           </ul>
         </div>
         <div className="w-44">
-          <h2 className="text-red-200 py-2 uppercase">
-            Learn More
-          </h2>
+          <h2 className="text-red-200 py-2 uppercase">Learn More</h2>
           <ul>
             <li>Privacy</li>
             <li>Security </li>
