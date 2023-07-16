@@ -7,11 +7,18 @@ font-family: 'Open Sans', sans-serif; */
   font-family: "Open Sans", sans-serif;
 }
 .banner {
+  height: 22rem;
+  font-family: "Akatab", sans-serif;
+}
+.banner1{
   background-image: url(./Assets/Images/banner1.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 22rem;
-  font-family: "Akatab", sans-serif;
+}
+.banner2{
+  background-image: url(./Assets/Images/banner2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .feature_img {
   height: 199px;
