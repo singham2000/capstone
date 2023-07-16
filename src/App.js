@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //pages Import
 import Homepage from "./Pages/Homepage";
-import Register from "./Pages/Register";
+import RegisterRestro from "./Pages/RegisterRestro";
 
 //CSS import
 import "./App.css";
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/registerRestro" element={<RegisterRestro />} />
       </Routes>
     </BrowserRouter>
   );
