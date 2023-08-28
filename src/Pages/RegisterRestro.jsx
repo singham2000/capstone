@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../Componenets/Navbar";
 import Footer from "../Componenets/Footer";
 
 const RegisterRestro = () => {
@@ -16,7 +15,6 @@ const RegisterRestro = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="banner banner2 flex justify-center items-center">
         <h1 className="text-white font-bold text-6xl max-sm:text-3xl">
           Partner with Capstone
@@ -28,7 +26,7 @@ const RegisterRestro = () => {
           name="restro_name"
           id="restro_name"
           placeholder="Restraurent Name"
-          className="h-10"
+          className="h-10 bg-"
           onChange={(e) =>
             setFormData({ ...formData, restro_name: e.target.value })
           }
@@ -79,7 +77,7 @@ const RegisterRestro = () => {
           type="button"
           value="Submit"
           onClick={submit}
-          className="mt-5 border-2 w-max border-red-500 p-2 rounded-full text-red-900 drop-shadow-2xl"
+          className="mt-5 border-2 w-max border-red-500 p-2 rounded text-red-900 drop-shadow-2xl"
         />
       </form>
       <Footer />
