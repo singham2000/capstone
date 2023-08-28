@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Componenets/Navbar";
 import Footer from "../Componenets/Footer";
 //Images Import
 import Min_order from "../Assets/Images/no_min_order.webp";
@@ -11,7 +10,6 @@ import AppStore from "../Assets/Images/ios_store.webp";
 const Homepage = () => {
   return (
     <div>
-      <Navbar />
       <div className="banner banner1 flex justify-center items-center">
         <h1 className="text-white font-bold text-9xl max-sm:text-6xl">
           CapStone
