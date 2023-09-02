@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import Footer from "../Componenets/Footer";
-
+import { useCookies } from 'react-cookie';
+import axios from 'axios';
 const Login = () => {
-
+  const [cookie, setCookie] = useCookies(['name']);
   const [formData, setFormData] = React.useState({
     phone: '',
     password: ''
@@ -10,16 +11,25 @@ const Login = () => {
 
   const LoginHandler = (e) => {
     e.preventDefault();
-    console.log(formData);
+    axios.post('http://localhost:5000/loginUser', {
+      phone: formData.phone,
+      password: formData.password
+    }).then((res) => {
+      const data = res.data;
+      if (data.status) {
+        setCookie('jwt', data.token);
+      }
+    })
+
   }
   return (
     <div>
       <div className="banner banner1 flex justify-center items-center">
         <h1 className="text-white font-bold text-9xl max-sm:text-6xl">Login</h1>
       </div>
-      <div className="m-5 flex justify-center">
-        <div className="bg-slate-300 w-11/12 rounded-3xl">
-          <form onSubmit={LoginHandler} method="post" className="p-6 flex flex-col lg:w-1/2 ">
+      <div className="m-5 flex justify-center items-center w-screen">
+        <div className="bg-slate-300 w-2/5 max-sm:w-2/3 rounded-3xl">
+          <form onSubmit={LoginHandler} method="post" className="p-6 flex flex-col">
             <label htmlFor="phone">Enter Phone Number</label>
             <input type="text"
               onChange={(e) =>
@@ -42,7 +52,6 @@ const Login = () => {
           </form>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

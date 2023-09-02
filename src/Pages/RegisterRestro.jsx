@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Footer from "../Componenets/Footer";
+import axios from 'axios';
 
 const RegisterRestro = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +10,21 @@ const RegisterRestro = () => {
   });
 
   const submit = () => {
-    console.log(formData); // TODO add API call to register the restaurant in our database and
+    console.log(formData); // TODO add API call to register the restaurant in our database
+    axios.post('http://localhost:5000/addRestaurant', {
+      name: formData.restro_name,
+      address: formData.address,
+      openingTime: formData.open_time,
+      closingTime: formData.close_time
+    }).then((res) => {
+      const data = res.data;
+      console.log(data);
+      if (data.status) {
+        alert(data.message);
+      } else {
+        alert(data.message);
+      }
+    })
   };
 
   return (
@@ -52,7 +66,7 @@ const RegisterRestro = () => {
             name="open_time"
             id="open_time"
             placeholder="Opening Time"
-            value={"10:00"}
+            value={formData.open_time}
             onChange={(e) =>
               setFormData({ ...formData, open_time: e.target.value })
             }
@@ -66,7 +80,7 @@ const RegisterRestro = () => {
             name="close_time"
             id="close_time"
             placeholder="Closing Time"
-            value={"13:00"}
+            value={formData.close_time}
             onChange={(e) =>
               setFormData({ ...formData, close_time: e.target.value })
             }
@@ -80,7 +94,6 @@ const RegisterRestro = () => {
           className="mt-5 border-2 w-max border-red-500 p-2 rounded text-red-900 drop-shadow-2xl"
         />
       </form>
-      <Footer />
     </div>
   );
 };
