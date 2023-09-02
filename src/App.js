@@ -5,8 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./Pages/Homepage";
 import RegisterRestro from "./Pages/RegisterRestro";
 import Login from "./Pages/Login";
-import Navbar from "./Componenets/Navbar";
 import Signup from "./Pages/Signup";
+import Navbar from "./Componenets/Navbar";
+import Footer from "./Componenets/Footer";
 
 //CSS import
 import "./App.css";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
