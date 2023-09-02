@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../Componenets/Footer";
 //Images Import
 import Min_order from "../Assets/Images/no_min_order.webp";
 import Live from "../Assets/Images/live_order.webp";
@@ -75,7 +74,6 @@ const Homepage = () => {
           <img src={AppStore} alt="app_store" width={250} className="m-5" />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
