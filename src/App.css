@@ -6,20 +6,30 @@ font-family: 'Open Sans', sans-serif; */
 .text_openSans {
   font-family: "Open Sans", sans-serif;
 }
+
 .banner {
   height: 22rem;
   font-family: "Akatab", sans-serif;
 }
-.banner1{
+
+.banner1 {
   background-image: url(./Assets/Images/banner1.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.banner2{
+
+.banner2 {
   background-image: url(./Assets/Images/banner2.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.restaurant-bg {
+  background-image: url(./Assets/Images/banner2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .feature_img {
   height: 199px;
   width: 105px;
