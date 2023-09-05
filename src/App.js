@@ -7,6 +7,8 @@ import RegisterRestro from "./Pages/RegisterRestro";
 import RestroListing from './Pages/RestroListing';
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
+import FoodList from "./Pages/FoodList";
+
 
 // Components imports 
 import Navbar from "./Componenets/Navbar";
@@ -22,6 +24,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/registerRestro" element={<RegisterRestro />} />
         <Route path="/restroList" element={<RestroListing />} />
+        <Route path="/foodList" element={<FoodList />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
